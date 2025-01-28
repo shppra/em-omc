@@ -54,7 +54,7 @@ All the items in this step are read-only, the primary goal is to learn about inv
     Password: <copy>welcome1</copy>
     ```
 
-    ![em-login-page](../initialize-environment/images/em-login.png " em-login-page ")
+    ![em-login-page](images/initialize-environment/images/em-login.png " em-login-page ")
 
 2.  From the Enterprise menu, select **Configuration**, then select **Inventory and  Usage Details**.
 
@@ -66,7 +66,7 @@ All the items in this step are read-only, the primary goal is to learn about inv
 
 3.  In the **Show** filter menu, select **Databases** to see all database instances managed by Enterprise Manager.
 
-    ![em-compliance-config-alldbs-page](images/em-compliance-config-alldbs.png " em-compliance-config-alldbs-page ")
+    ![em-compliance-config-alldbs-page](images/em-compliance-config-alldbs.png  " em-compliance-config-alldbs-page ")
 
 4.  Analyze various database versions and the number of instances for each version or you can choose PDBs 19c highlighted above page.
 
@@ -576,13 +576,13 @@ A compliance standard rule is a specific test to determine if a configuration da
 
     ![hipaa-compliance-lib-search-page](images/hipaa-compliance-lib-search.png " hipaa-compliance-lib-search-page")
 
-5.  Select Health Insurance Portability and Accountability Act (HIPAA) OL-7 standard, Click on Show Details.
+5.  Select Health Insurance Portability and Accountability Act (HIPAA) OL-8 standard, Click on Show Details.
 
     ![hipaa-compliance-library-show-detail-page](images/hipaa-compliance-library-show-detail.png " hipaa-compliance-library-show-detail-page ")
 
 6. After Selecting  **Show Details** Review Quickly scan various rules available for HIPAA out-of-box, Click on **Done**
 
-    ![compliance-standard-hipaa-ol-7-details-page](images/compliance-standard-hipaa-ol-7-details.png " compliance-standard-hipaa-ol-7-details-page ")
+    ![compliance-standard-hipaa-ol-8-details-page](images/compliance-standard-hipaa-ol-8-details.png " compliance-standard-hipaa-ol-8-details-page ")
 
 7. Click on **Associate Targets** to associate a database target for this selected standard.
 
@@ -631,26 +631,26 @@ A compliance standard rule is a specific test to determine if a configuration da
 
     Click on the number under the **Critical** column. to see details of the host's critical violations.
 
-    ![compliance-dashboard-summary-hipaa-ol-7-page](images/compliance-dashboard-summary-hipaa-ol-7.png " compliance-dashboard-summary-hipaa-ol-7-page ")
+    ![compliance-dashboard-summary-hipaa-ol-8-page](images/compliance-dashboard-summary-hipaa-ol-8.png " compliance-dashboard-summary-hipaa-ol-8-page ")
 
 17. Host's critical violations can be explored by clicking the **Target name** column arrow.
 
-    ![critical-violations-hipaa-compliance-ol-7-page](images/critical-violations-hipaa-compliance-ol-7.png " critical-violations-hipaa-compliance-ol-7-page ")
+    ![critical-violations-hipaa-compliance-ol-8-page](images/critical-violations-hipaa-compliance-ol-8.png " critical-violations-hipaa-compliance-ol-8-page ")
 
     Each critical rule violations status can be seen on this pop-up page in detail.
 
     Click on  **Report**
 
-    ![critical-violations-hipaa-compliance-rules-ol-7-page](images/critical-violations-hipaa-compliance-rules-ol-7.png " critical-violations-hipaa-compliance-rules-ol-7-page ")
+    ![critical-violations-hipaa-compliance-rules-ol-8-page](images/critical-violations-hipaa-compliance-rules-ol-8.png " critical-violations-hipaa-compliance-rules-ol-8-page ")
 
 18. It takes you to a separate page that shows Compliance Evaluation Report to see the reports with passed and failed rules.
 
-    ![compliance-evaluation-report1-hipaa-ol-7-page](images/compliance-evaluation-report1-hipaa-ol-7.png " compliance-evaluation-report1-hipaa-ol-7-page ")
+    ![compliance-evaluation-report1-hipaa-ol-8-page](images/compliance-evaluation-report1-hipaa-ol-8.png " compliance-evaluation-report1-hipaa-ol-8-page ")
 
-    And clicking on the **Result Details arrow emcc.marketplace.com: Health Insurance Portability and Accountability Act (HIPAA) OL-7** to see drill down evaluation details.
+    And clicking on the **Result Details arrow emcc.marketplace.com: Health Insurance Portability and Accountability Act (HIPAA) OL-8** to see drill down evaluation details.
 
-    ![compliance-evaluation-report2-hipaa-ol-7-page](images/compliance-evaluation-report2-hipaa-ol-7.png " compliance-evaluation-report2-hipaa-ol-7-page ")
-    ![compliance-evaluation-report3-hipaa-ol-7-page](images/compliance-evaluation-report3-hipaa-ol-7.png " compliance-evaluation-report3-hipaa-ol-7-page ")
+    ![compliance-evaluation-report2-hipaa-ol-8-page](images/compliance-evaluation-report2-hipaa-ol-8.png " compliance-evaluation-report2-hipaa-ol-8-page ")
+    ![compliance-evaluation-report3-hipaa-ol-8-page](images/compliance-evaluation-report3-hipaa-ol-8.png " compliance-evaluation-report3-hipaa-ol-8-page ")
 
 19. Individual rules can be further explored with select Enterprise Main Menu, then selecting Compliance and Results Page.
 
@@ -658,21 +658,21 @@ A compliance standard rule is a specific test to determine if a configuration da
 
     It takes you to the Compliance Results page.
 
-    Click on **Health Insurance Portability and Accountability Act (HIPAA) OL-7**
+    Click on **Health Insurance Portability and Accountability Act (HIPAA) OL-8**
 
-    ![hipaa-compliance-evaluation-results-ol7-page](images/hipaa-compliance-evaluation-results-ol7.png " hipaa-hipaa-compliance-evaluation-results-ol7-page ")
+    ![hipaa-compliance-evaluation-results-ol8-page](images/hipaa-compliance-evaluation-results-ol8.png " hipaa-hipaa-compliance-evaluation-results-ol8-page ")
 
 20. Individual compliance rules success and violations, and evaluations can be explored. Navigate to Results by target, Results by compliance standard Rules tab,  to get an understanding of Frameworks, Standards, and host Targets level compliance visually.
 
-    ![hipaa-compliance-ol-7-host-rule-results-page](images/hipaa-compliance-ol-7-host-rule-results.png " hipaa-compliance-ol-7-host-rule-results-page ")
+    ![hipaa-compliance-ol-8-host-rule-results-page](images/hipaa-compliance-ol-8-host-rule-results.png " hipaa-compliance-ol-8-host-rule-results-page ")
 
     Individual standard rule details status and rationale can be further analyzed.
 
-    ![hipaa-compliance-ol-7-individual-rule-detail-page](images/hipaa-compliance-ol-7-individual-rule-detail.png " hipaa-compliance-ol-7-individual-rule-detail-page ")
+    ![hipaa-compliance-ol-8-individual-rule-detail-page](images/hipaa-compliance-ol-8-individual-rule-detail.png " hipaa-compliance-ol-8-individual-rule-detail-page ")
 
 21. Violations events can be further explored in detail.
 
-    ![hipaa-compliance-ol-7-individual-rule-detail-page](images/hipaa-compliance-ol-7-violation-rule-detail.png " hipaa-compliance-ol-7-individual-rule-detail-page ")
+    ![hipaa-compliance-ol-8-individual-rule-detail-page](images/hipaa-compliance-ol-8-violation-rule-detail.png " hipaa-compliance-ol-8-individual-rule-detail-page ")
 
   All these would give you a security posture of the host target.
 
