@@ -54,7 +54,7 @@ All the items in this step are read-only, the primary goal is to learn about inv
     Password: <copy>welcome1</copy>
     ```
 
-    ![em-login-page](initialize-environment/images/em-login.png " em-login-page ")
+    ![em-login-page](../initialize-environment/images/em-login.png " em-login-page ")
 
 2.  From the Enterprise menu, select **Configuration**, then select **Inventory and  Usage Details**.
 
