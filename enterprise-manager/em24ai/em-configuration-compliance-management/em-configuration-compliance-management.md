@@ -1,6 +1,6 @@
 # Configuration and Compliance Management
 ## Introduction
-The objective of this lab is to highlight Oracle Enterprise Manager Cloud Control 13c’s Lifecycle Management capabilities related to configuration and security compliance management of managed targets. Each activity focuses on the different capabilities of an administrator.
+The objective of this lab is to highlight Oracle Enterprise Manager Cloud Control 24ai’s Lifecycle Management capabilities related to configuration and security compliance management of managed targets. Each activity focuses on the different capabilities of an administrator.
 
 *Estimated Lab Time:* 60 minutes
 
@@ -33,7 +33,7 @@ In this lab, you will perform the following steps
     - Lab: Environment Setup
     - Lab: Initialize Environment
 
-*Note*: This lab environment is set up with Enterprise Manager Cloud Control Release 13.5 and Database 19.10 as Oracle Management Repository.
+*Note*: This lab environment is set up with Enterprise Manager Cloud Control Release 24ai and Database 19.10 as Oracle Management Repository.
 
 ## Task 1: Inventory & Usage Details
 
@@ -47,7 +47,7 @@ All the items in this step are read-only, the primary goal is to learn about inv
 1. On the browser window on the right preloaded with **Enterprise Manager**, if not already logged in, click on the **Username** field and login with the credentials provided below.
 
     ```
-    Username: <copy>sysman</copy>
+    Username: <copy>emadmin</copy>
     ```
 
     ```
@@ -56,7 +56,7 @@ All the items in this step are read-only, the primary goal is to learn about inv
 
     ![em-login-page](../initialize-environment/images/em-login.png " em-login-page ")
 
-2.  From the Enterprise menu, select **Configuration**, then select **Inventory and  Usage Details**.
+2.  From the **Enterprise** menu, select **Configuration**, then select **Inventory and  Usage Details**.
 
     ![configuration-inventories-usage-page](images/configuration-inventories-usage.png " configuration-inventories-usage-page ")
 
@@ -70,21 +70,25 @@ All the items in this step are read-only, the primary goal is to learn about inv
 
 4.  Analyze various database versions and the number of instances for each version or you can choose PDBs 19c highlighted above page.
 
-5.  **Table View** can be visible by selecting and adjusting the grid line on the page as shown below.
+5.  **Target View** can be visible by selecting on the page as shown below.
 
     ![table-review-grid-line-page](images/table-review-grid-line.png " table-review-grid-line-page ")
 
-    Explore the pie chart to see the breakdown of database inventory by color-code percentages. Also, in the **Graphical View**, choose the **Trend** radio button to see the growth of a given database instance over a period of time.
+    Explore the pie chart to see the breakdown of database inventory by color-code percentages.
 
     ![inventory-usage-detail-page](images/inventory-usage-detail.png " inventory-usage-detail-page ")
 
-6. Click on Table View, further details to explore.
+6. Select Version, further details to explore.
 
     ![em-inventory-usage-detail-table-select-page](images/em-inventory-usage-detail-table-select.png " em-inventory-usage-detail-table-select-page ")  
 
-    Click **Close**.
+7.  Inventory usage and Details can be exported for offline further reviews and analysis.
 
-7.  In the Details excel file table output below, you will see details as follows
+    ![em-inventory-detail-export-summary-page](images/em-inventory-detail-export-summary.png " em-inventory-detail-export-summary-page ")
+
+    These details can be exported to an excel file and shared the report with management. With the excel report, you can filter based on the properties you are using to show department or line of business-specific assets allocation and usage, excel file format as shown here.
+
+8.  In the Details excel file table output below, you will see details as follows
 
       - Database instance name Target
       - Host on which this database is located
@@ -94,11 +98,6 @@ All the items in this step are read-only, the primary goal is to learn about inv
       - Most importantly, LOB/Department information
         The Details table gives more information about each Database instance for you to get a good understanding of the number of database targets deployed on a given host with OS version. If your organization uses properties like Lifecycle, Line of Business, or Department, then you will be able to determine the number of targets deployed for a given business unit. Explore these features to get a good handle on Inventory and Usage details.
 
-8.  Inventory usage and Details can be exported for offline further reviews and analysis.
-
-    ![em-inventory-detail-export-summary-page](images/em-inventory-detail-export-summary.png " em-inventory-detail-export-summary-page ")
-
-    These details can be exported to an excel file and shared the report with management. With the excel report, you can filter based on the properties you are using to show department or line of business-specific assets allocation and usage, excel file format as shown here.
 
     ![em-ecm-inv-usage-detail-page](images/em-ecm-inv-usage-detail.png " em-ecm-inv-usage-detail ")  
 
@@ -110,17 +109,17 @@ In this step, you will compare two database targets to determine configuration d
 
 ### Execution
 
-1.  Log into your Enterprise Manager as **sysman** as indicated in the Prerequisites step if not already done.
+1.  Log into your Enterprise Manager as **emadmin** as indicated in the Prerequisites step if not already done.
 
-2.  From the Enterprise menu, select **Configuration**, then select **Configuration & Drift Management**
+2.  From the **Enterprise** menu, select **Configuration**, then select **Configuration & Drift Management**
 
     ![em-login-welcome-page](images/em-login-welcome.png " em-login-welcome-page ")
 
 3.  Review the different types of comparisons supported by Clicking on the **i** icon.
 
-    ![comparison-and-driftmanagement-page](images/comparison-and-driftmanagement.png " comparison-and-driftmanagement-page ")
+    ![comparison-and-driftmanagement-page](images/comparison-and-driftmanagement.png  " comparison-and-driftmanagement-page ")
 
-4.	Select the **One-Time Comparison Results** tab on the left side of the dashboard page. Click **Create Comparison**
+4.  Select the **One-Time Comparison Results** tab on the left side of the dashboard page. Click **Create Comparison**
 
     ![onetime-create-comparison-page](images/onetime-create-comparison.png " onetime-create-comparison-page ")
 
@@ -136,9 +135,9 @@ In this step, you will compare two database targets to determine configuration d
 
     Click Search.
 
-    ![select-targets-type-page](images/select-targets-type.png " select-targets-type-page ")
+    ![select-targets-type-page](images/select-targets-type.png "select-targets-type-page ")
 
-7.  Select **emrep.us.oracle.com** as the reference target.
+7.  Select **finance.subnet.vcn.oraclevcn.com** as the reference target.
 
     ![select-reference-type-target-page](images/select-referencetype-target.png " select-referencetype-target-page ")
 
@@ -154,18 +153,17 @@ In this step, you will compare two database targets to determine configuration d
 
     ![add-target-compared-page](images/add-target-compared.png " add-target-compared-page ")
 
-11. Choose **finance.subnet.vcn.oraclevcn.com** target to compare with the reference target.
+11. Choose **sales.subnet.vcn.oraclevcn.com** target to compare with the reference target.
 
     ![select-database-target-to-compare-page](images/select-database-target-to-compare.png " select-database-target-to-compare-page ")
 
-    Once the target is chosen, it appears as below.
-    Click **Submit**
+    Once the target is chosen, Click **Submit**.
 
-    ![compared-add-target-submit-page](images/compared-add-target-submit.png " compared-add-target-submit-page ")
+   
 
 12. The comparison would take a few seconds to a minute for selected targets.
 
-    ![comparison-progress-page](images/comparison-progress.png " comparison-progress-page ")
+    ![compared-add-target-submit-page](images/compared-add-target-submit.png " compared-add-target-submit-page ")
 
     Below are the results.
     Click **Clear All** at Configuration Items(Differences).
@@ -185,13 +183,13 @@ In this step, you will compare two database targets to determine configuration d
 
     ![comparison-result-initialization-parameters-page](images/comparison-result-initialization-parameters.png " omparison-result-initialization-parameters-page ")
 
-14. Now, let us go to the Comparison and Drift Management dashboard page for further analysis of the results.
+14. Now, let us go to the **Enterprise>>Configuration>>Comparison & Drift Management dashboard** page for further analysis of the results.
 
     ![configuration-comparison-drift-management-page](images/configuration-comparison-drift-management.png " cconfiguration-comparison-drift-management-page ")
 
 15. On the dashboard page, the donut chart for Comparison Overview gives you the summary result. Click on the **donut chart** to analyze one-time comparison result details.
 
-    ![dashboard-one-time-comparison-results-page](images/dashboard-one-time-comparison-results.png " dashboard-one-time-comparison-results-page ")
+    ![dashboard-one-time-comparison-results-page](images/dashboard-one-time-comparison-results.PNG " dashboard-one-time-comparison-results-page ")
 
     You should see the comparison definition you created on this page.
 
@@ -277,9 +275,7 @@ In this workshop, you will learn about continuous configuration drift monitoring
 
     ![confirm-comparison-and-drift-management-page](images/confirm-comparison-and-drift-management.png " confirm-comparison-and-drift-management-page ")
 
-    **Search** with Template name **ECM003-Drift_Demo** shows with a Confirmation page
-
-    ![search-comparison-drift-management-page](images/search-comparison-drift-management.png " search-comparison-drift-management-page ")
+    Navigate to **Drift Results** page
 
 9.  Go to the Drift Results tab and create a drift definition.
 
@@ -293,7 +289,7 @@ In this workshop, you will learn about continuous configuration drift monitoring
 
     ![create-definition-driftdemo-database-instance-page](images/create-definition-driftdemo-database-instance.png " create-definition-driftdemo-database-instance-page ")
 
-11. On the drift definition details page, provide a unique name for the drift definition.
+11. On the drift definition details page, provide a unique name **ECMO03-Drift Demo - Drift** for the drift definition.
 
     ![drift-definition-detail-name-page](images/drift-definition-detail-name.png " drift-definition-detail-name-page ")
 
@@ -304,19 +300,22 @@ In this workshop, you will learn about continuous configuration drift monitoring
 
     ![source-target-search-page](images/source-target-search.png " source-target-search-page")
 
-13. Choose **emrep.us.oracle.com** as your source target. Click on **Select**
+13. Choose **sales.subnet.vcn.oraclevcn.com** as your source target. Click on **Select**
 
     ![select-target-name-page](images/select-target-name.png " select-target-name-page ")
 
-14. You will see Source Target (***emrep.us.oracle.com***) is selected that acts as your reference target.
+14. You will see Source Target (**sales.subnet.vcn.oraclevcn.com**) is selected that acts as your reference target.
 
-    ![drift-definition-details-save-target-page](images/drift-definition-details-save-target.png " ddrift-definition-details-save-target-page ")
+    ![drift-definition-details-save-target-page](images/drift-definition-details-save-target.png " drift-definition-details-save-target-page ")
+    Select **Save and Associate Targets** to select targets to be monitored.
 
-15. Select **Save and Associate Targets** to select targets to be monitored.
+15. You wil see Drift Definition Target Association page
+ 
+    Click on Add
 
     ![drift-definitiontarget-association-page](images/drift-definitiontarget-association.png " ddrift-definitiontarget-association-page ")
 
-16. Click on **Add** to select and associate a target to be monitored for drift.
+16. Select and associate a target to be monitored for drift.
 
     ![select-targets-to-target-name-page](images/select-targets-to-target-name.png " select-targets-to-target-name-page ")
 
@@ -332,19 +331,21 @@ In this workshop, you will learn about continuous configuration drift monitoring
 
     ![drift-definition-target-saves-association-page](images/drift-definition-target-saves-association.png " drift-definition-target-saves-association-page ")
 
-20. Once you select Yes in the previous step, drift monitoring is in progress. Go to **Enterprise --> Configuration --> Comparison & Drift Management** Dashboard page. After a minute, refresh the page to see if the drift monitoring is completed. You should see a new or updated donut chart under the ‘Drifted Overview’ dashlet.
+20. Once you select Yes in the previous step, drift monitoring is in progress, After a minute or two, refresh the page to see if the drift monitoring is completed.
+
+    ![compared-drift-management-results-page](images/compared-drift-management-result.png " compared-drift-management-results-page ")
+
+21. Go to **Dashboard --> Comparison & Drift Management** Dashboard page.  You should see a new or updated donut chart under the ‘Drifted Overview’ dashlet.
 
     ![comparison-&-drift-management-dashboard-page](images/comparison-&-drift-management-dashboard.png " comparison-&-drift-management-dashboard-page ")
 
     Click on the Drift Results tab on the left panel (2nd tab from the top).
 
-21. This page will show results for all drift definitions managed by this instance of Enterprise Manager. Identify the drift definition you created for further analysis of configuration drift results.
+22. This page will show results for all drift definitions managed by this instance of Enterprise Manager. Identify the drift definition you created for further analysis of configuration drift results.
+
+    Review the drift details. Click on the **Drift Definition** (ECM003-Drift-Demo – Drift)
 
     ![compared-drift-management-results-page](images/compared-drift-management-results.png " compared-drift-management-results-page ")
-
-22. Review the drift details. Click on the **Drift Definition** (ECM003-Drift-Demo – Drift)
-
-    ![comparison-review-ecm003-drift-demo-drift-page](images/compared-drift-management-results-select.png " comparison-review-ecm003-drift-demo-drift-page ")
 
     For a detailed analysis of configuration drift. You can see the differences in the Initialization Parameters between the two targets.
 
@@ -356,13 +357,9 @@ In this workshop, you will learn about continuous configuration drift monitoring
      - A red box with 1 (left only) means that the comparison did not find a matching item to compare, this means 2nd target doesn’t have a property configured to compare
      - A red box 2 (right only) means that the comparison did not find a matching item to compare to the second configuration
 
-23. Go to **Enterprise --> Configuration --> Comparison & Drift Management** Dashboard page.
+23. Click on  **Comparison & Drift Management**.
 
-    ![comparison-&-drift-management-dashboard-page](images/comparison-and-drift-management-dashboard.png " comparison-&-drift-management-dashboard-page ")
-
-    Click on Click on **Drift Results**.
-
-    ![config-drift-dashboard-page](images/config-drift-dashboard.png " cconfig-drift-dashboard-page ")
+    ![comparison-&-drift-management-dashboard-page](images/Comparison&Drift-Management.png " comparison-&-drift-management-dashboard-page ")
 
 24. On the Drift Results page, highlight the definition and choose **Export Results**.
 
@@ -564,25 +561,30 @@ A compliance standard rule is a specific test to determine if a configuration da
 
 1.  Log into your Enterprise Manager VM using the IP provided on your cheat sheet.
 
-2.  From the Enterprise menu, select **Compliance**, then select **Library**
+2.  From the Enterprise menu, select **Compliance Standards** 
 
     ![em-enterprise-compliance-library-page](images/em-enterprise-compliance-library.png " em-enterprise-compliance-libraryß-page ")
 
-3.  The compliance Standards tab contains all standards for various supported targets.
+3.  You will see Standards Compliance Dashboard, Click on **Dashboard**, then select **Library**
+
+    ![all_compliance-library-standards-page](images/compliance-standard-dashboard.png " call_compliance-library-standards-page ")
+    
+4.  The compliance Standards tab contains all standards for various supported targets.
 
     ![all_compliance-library-standards-page](images/all-compliance-library-standards.png " call_compliance-library-standards-page ")
+    
 
-4.  In the Compliance Standards tab, search for the Keywords column for the word **HIPAA**
+    In the Compliance Standards tab, search for the Keywords column for the word **HIPAA**
 
     ![hipaa-compliance-lib-search-page](images/hipaa-compliance-lib-search.png " hipaa-compliance-lib-search-page")
 
-5.  Select Health Insurance Portability and Accountability Act (HIPAA) OL-7 standard, Click on Show Details.
+5.  Select Health Insurance Portability and Accountability Act (HIPAA) OL-8 standard, Click on Show Details.
 
     ![hipaa-compliance-library-show-detail-page](images/hipaa-compliance-library-show-detail.png " hipaa-compliance-library-show-detail-page ")
 
 6. After Selecting  **Show Details** Review Quickly scan various rules available for HIPAA out-of-box, Click on **Done**
 
-    ![compliance-standard-hipaa-ol-7-details-page](images/compliance-standard-hipaa-ol-7-details.png " compliance-standard-hipaa-ol-7-details-page ")
+    ![compliance-standard-hipaa-ol-8-details-page](images/compliance-standard-hipaa-ol-8-detail.png " compliance-standard-hipaa-ol-8-details-page ")
 
 7. Click on **Associate Targets** to associate a database target for this selected standard.
 
@@ -631,50 +633,67 @@ A compliance standard rule is a specific test to determine if a configuration da
 
     Click on the number under the **Critical** column. to see details of the host's critical violations.
 
-    ![compliance-dashboard-summary-hipaa-ol-7-page](images/compliance-dashboard-summary-hipaa-ol-7.png " compliance-dashboard-summary-hipaa-ol-7-page ")
+    ![compliance-dashboard-summary-hipaa-ol-8-page](images/compliance-dashboard-summary-hipaa-ol-8.png " compliance-dashboard-summary-hipaa-ol-8-page ")
 
 17. Host's critical violations can be explored by clicking the **Target name** column arrow.
 
-    ![critical-violations-hipaa-compliance-ol-7-page](images/critical-violations-hipaa-compliance-ol-7.png " critical-violations-hipaa-compliance-ol-7-page ")
+    ![critical-violations-hipaa-compliance-ol-8-page](images/critical-violations-hipaa-compliance-ol-8.png " critical-violations-hipaa-compliance-ol-8-page ")
 
     Each critical rule violations status can be seen on this pop-up page in detail.
 
-    Click on  **Report**
+    Click on  'X' to close
 
-    ![critical-violations-hipaa-compliance-rules-ol-7-page](images/critical-violations-hipaa-compliance-rules-ol-7.png " critical-violations-hipaa-compliance-rules-ol-7-page ")
+    ![critical-violations-hipaa-compliance-rules-ol-8-page](images/critical-violations-hipaa-compliance-rules-ol-8.png " critical-violations-hipaa-compliance-rules-ol-8-page ")
 
-18. It takes you to a separate page that shows Compliance Evaluation Report to see the reports with passed and failed rules.
-
-    ![compliance-evaluation-report1-hipaa-ol-7-page](images/compliance-evaluation-report1-hipaa-ol-7.png " compliance-evaluation-report1-hipaa-ol-7-page ")
-
-    And clicking on the **Result Details arrow emcc.marketplace.com: Health Insurance Portability and Accountability Act (HIPAA) OL-7** to see drill down evaluation details.
-
-    ![compliance-evaluation-report2-hipaa-ol-7-page](images/compliance-evaluation-report2-hipaa-ol-7.png " compliance-evaluation-report2-hipaa-ol-7-page ")
-    ![compliance-evaluation-report3-hipaa-ol-7-page](images/compliance-evaluation-report3-hipaa-ol-7.png " compliance-evaluation-report3-hipaa-ol-7-page ")
-
-19. Individual rules can be further explored with select Enterprise Main Menu, then selecting Compliance and Results Page.
-
+18. Individual rules can be further explored with selecting **Health Insurance Portability and Accountability Act (HIPAA) OL-8** on Dashboard Compliance Summary section.
+ 
     ![compliance-results-for-page](images/compliance-results-for-hipaa.png " compliance-results-for-page ")
 
     It takes you to the Compliance Results page.
 
-    Click on **Health Insurance Portability and Accountability Act (HIPAA) OL-7**
+    ![hipaa-compliance-evaluation-results-ol8-page](images/hipaa-compliance-evaluation-results-ol8.png " hipaa-hipaa-compliance-evaluation-results-ol8-page ")
 
-    ![hipaa-compliance-evaluation-results-ol7-page](images/hipaa-compliance-evaluation-results-ol7.png " hipaa-hipaa-compliance-evaluation-results-ol7-page ")
+    Clicking on the **Result Details arrow:Health Insurance Portability and Accountability Act (HIPAA) OL-8** to see drill down rule details.
 
-20. Individual compliance rules success and violations, and evaluations can be explored. Navigate to Results by target, Results by compliance standard Rules tab,  to get an understanding of Frameworks, Standards, and host Targets level compliance visually.
+19. Individual compliance rules success and violations, and evaluations can be explored. Navigate to Results by target, Results by compliance standard Rules tab,  to get an understanding of Frameworks, Standards, and host Targets level compliance visually.
 
-    ![hipaa-compliance-ol-7-host-rule-results-page](images/hipaa-compliance-ol-7-host-rule-results.png " hipaa-compliance-ol-7-host-rule-results-page ")
+    ![hipaa-compliance-ol-8-host-rule-results-page](images/hipaa-compliance-ol-8-host-rule-results.png " hipaa-compliance-ol-8-host-rule-results-page ")
 
     Individual standard rule details status and rationale can be further analyzed.
 
-    ![hipaa-compliance-ol-7-individual-rule-detail-page](images/hipaa-compliance-ol-7-individual-rule-detail.png " hipaa-compliance-ol-7-individual-rule-detail-page ")
+    ![hipaa-compliance-ol-8-individual-rule-detail-page](images/hipaa-compliance-ol-8-individual-rule-detail.png " hipaa-compliance-ol-8-individual-rule-detail-page ")
 
-21. Violations events can be further explored in detail.
+20. Violations events can be further explored in detail.
 
-    ![hipaa-compliance-ol-7-individual-rule-detail-page](images/hipaa-compliance-ol-7-violation-rule-detail.png " hipaa-compliance-ol-7-individual-rule-detail-page ")
+    ![hipaa-compliance-ol-8-individual-rule-detail-page](images/hipaa-compliance-ol-8-violation-rule-detail.png " hipaa-compliance-ol-8-individual-rule-detail-page ")
 
-  All these would give you a security posture of the host target.
+     Click on **Compliance Results**
+
+21. You will see Standards Compliance page, which shows Evaluation Results for  **Health Insurance Portability and Accountability Act (HIPAA) OL-8**
+
+    ![compliance-evaluation-report1-hipaa-ol-8-page](images/compliance-evaluation-hipaa-ol-8.png " compliance-evaluation-report1-hipaa-ol-8-page ")
+
+    From the Enterprise menu, select **Compliance Standards** 
+
+    ![compliance-evaluation-report2-hipaa-ol-8-page](images/compliance-evaluation-report2-hipaa-ol-8.png " compliance-evaluation-report2-hipaa-ol-8-page ")
+
+22. You will see Standards Compliance Dashboard, then select Compliance Summary section **Health Insurance Portability and Accountability Act (HIPAA) OL-8**.
+
+    ![compliance-evaluation-report3-hipaa-ol-8-page](images/compliance-Summary-standards.png " compliance-evaluation-report3-hipaa-ol-8-page ") 
+
+    Click on **Report**
+
+    It takes you to a separate page that shows Compliance Evaluation Report to see the reports with passed and failed rules.
+    ![compliance-evaluation-report3-hipaa-ol-8-page](images/compliance-evaluation-report-hipaa-ol-8.png " compliance-evaluation-report3-hipaa-ol-8-page ")
+    ![compliance-evaluation-report3-hipaa-ol-8-page](images/compliance-evaluation-report-1-hipaa-ol-8.png " compliance-evaluation-report3-hipaa-ol-8-page ")
+
+    All these would give you a security posture of the host target.
+
+23. Click **Logout**
+
+    ![host-compliance-logout-page](images/host-compliance-logout.png " host-compliance-logout-page ")  
+
+
 
   <!---- With this step, you got hands-on experience in creating a custom framework to monitor the security compliance of heterogeneous targets (Database and Host, this example). This will help you assess the overall security compliance of all
   Enterprise Manager managed targets from one aggregated view. And if required, you can drill down into each standard to assess details of target-specific security compliance. ---->
@@ -689,11 +708,11 @@ A compliance standard rule is a specific test to determine if a configuration da
   - [Enterprise Manager Documentation Library](https://docs.oracle.com/en/enterprise-manager/index.html)
   - [Database Lifecycle Management](https://docs.oracle.com/en/enterprise-manager/cloud-control/enterprise-manager-cloud-control/13.4/lifecycle.html)
   - [Database Lifecycle Management Webinar](https://www.youtube.com/watch?v=QjdwUfBn6FI)
-  - [Compliance Standards](https://docs.oracle.com/en/enterprise-manager/cloud-control/enterprise-manager-cloud-control/13.5/emdbc/pluggable-database-compliance-standards.html#GUID-364EC867-C012-4710-B695-2D1BF53E2F86)
+  - [Compliance Standards](https://docs.oracle.com/en/enterprise-manager/cloud-control/enterprise-manager-cloud-control/24ai/emdbc/pluggable-database-compliance-standards.html#GUID-364EC867-C012-4710-B695-2D1BF53E2F86)
   - [Enterprise Manager CIS Benchmark Blog](https://blogs.oracle.com/database/post/enterprise-manager-cis-benchmark-certification-eases-adoption-of-secure-database-best-practices)
   - [HIPAA Compliance with Enterprise Manager](https://blogs.oracle.com/observability/post/secure-linux-configuration-for-hipaa-compliance-with-enterprise-manager)
   - [SCAP Support Blog](https://blogs.oracle.com/observability/post/scap-support-secure-linux-configuration-with-enterprise-manager)
-  - [SCAP Standards](https://docs.oracle.com/en/enterprise-manager/cloud-control/enterprise-manager-cloud-control/13.5/emdbc/scap-supported-standards.html)
+  - [SCAP Standards](https://docs.oracle.com/en/enterprise-manager/cloud-control/enterprise-manager-cloud-control/24ai/emdbc/scap-supported-standards.html)
 
 ## Acknowledgements
 
