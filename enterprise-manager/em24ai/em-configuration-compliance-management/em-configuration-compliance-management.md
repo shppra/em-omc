@@ -416,9 +416,9 @@ and Applicate To drop down column choose **Database Instance** and click on **Se
 
     Click on collapsable icon ![collapse](images/collapsed-search.png " ") search
 
-    ![library-page](images/compliance-library.png " compliance-library-page ")
+    ![library-page](images//compliance-library.png " compliance-library-page ")
 
-5.  Select the **Oracle 19c Database CIS V1.1.0 - Level 1 - RDBMS using Traditional Auditing for Oracle Database** for Oracle Database standard.
+5.  Select the **Oracle 19c Database CIS V1.2.0 - Level 1 - RDBMS using Traditional Auditing for Oracle Database** for Oracle Database standard.
 
     ![choose-cis-compliance-library-page](images/choose-cis-compliance-library.png " choose-cis-compliance-library-page ")
 
@@ -451,9 +451,9 @@ and Applicate To drop down column choose **Database Instance** and click on **Se
 
     ![add-cis-compliance-standard-target-page](images/add-cis-compliance-standard-target.png " add-cis-compliance-standard-target-page ")
 
-11. The list of targets chosen will show up on the target association page as shown below, Select **emrep.us.oracle.com** target to check the compliance security posture.
+11. The list of targets chosen will show up on the target association page as shown below, Select **hr.subnet.vcn.oraclevcn.com** target to check the compliance security posture.
 
-    ![select-targets-compliance-target-page](images/select-targets-compliance-target.png " sselect-targets-compliance-target-page ")
+    ![select-targets-compliance-target-page](images/select-targets-compliance-target.png " select-targets-compliance-target-page ")
 
 12. The list of targets chosen will show up on the target association page as shown below. Click **OK** and a pop-up window shows to confirm an association.
 
@@ -461,7 +461,9 @@ and Applicate To drop down column choose **Database Instance** and click on **Se
 
 13. Click **Yes** to save the association which initiates a compliance check on this target by executing all the compliance rules associated with this compliance standard.
 
-    ![save-association-compliance-target-page](images/save-association-compliance-target.png " save-association-compliance-target-page ")
+    ![save-association-compliance-target-page](images/enabled-compliance-standard-target-association.png " save-association-compliance-target-page ")
+
+    ![save-association-page](images/save-association.png "save-association-page")
 
     The pop-up window shows the process status, Click **OK**
 
@@ -476,29 +478,55 @@ Click the **Cancel** button.
 
     ![cis-compliance-standard-target-success-page](images/cis-compliance-standard-target-success.png " cis-compliance-standard-target-success-page ")
 
- 16. Go to the **Compliance >> dashboard ** page to check the CIS compliance posture. It takes about few minutes to show up in compliance dashboard results.
+ 16. Go to the **Enterprise>>Compliance Standards** page to check the CIS compliance posture. It takes about few minutes to show up in compliance dashboard results.
  
-        ![compliance-results-dashboard-page](images/compliance-results-dashboard.png " compliance-results-dashboard-page ")
+   ![compliance-standards-compliance-page](images/compliance-standards-compliance.png " compliance-standards-compliance-page ")
        
-     Under the Compliance Summary panel at the bottom below page:
+    Under the Compliance Summary panel at the bottom below page:
+
+   ![compliance-standards-dashboard-page](images/compliance-standards-dashboard.png " compliance-standards-dashboard-page ")
 
      - Explore various tabs to get an understanding of Frameworks, Standards, and target-level compliance
      - For any given standard, if there are Critical, Warning, or Minor Warnings
      - Click on the violation number to see more details of the violationS by clicking the numbers below each column's names
 
-17. By Clicking on the Critical column number, you will see details like each violation, and the last evaluation date.
+17. By Clicking on the Critical column number, you can see Critical Violations.
 
     ![compliance-dashboard-evaluation-page](images/compliance-dashboard-evaluation.png " compliance-dashboard-evaluation-page ")
 
-    By clicking under Target Name.
+    By clicking under Target Name, you will see details like each violation, and the last evaluation date
 
     ![cis-compliance-critical-violations-page](images/cis-compliance-critical-violations.png " cis-compliance-critical-violations-page ")
 
-18. Each rule name violated and rationale for the violation can be explored below, And also by clicking on Report.
+18. Each rule name violated and rationale for the violation can be explored below
+
 
     ![evaluate-cis-critical-violations-page](images/evaluate-cis-critical-violations.png " evaluate-cis-critical-violations-page ")
 
-    Compliance Evaluation Report will be populated on a separate page that can be used for further analysis of each rule passed or failed.
+    Click **X** to close Critical Violations window
+
+    By going back to the **Compliance Dashboard** page,  click on the standard that you created **CIS_DEMO** in the previous steps to review further evaluations of results.
+
+    ![compliance-dashboard-cis-compliance-summary-page](images/compliance-dashboard-cis-compliance-summary.png " compliance-dashboard-cis-compliance-summary-page ")
+
+19. Each rule result can undergo a detailed analysis as shown on this page.
+
+    ![cis-compliance-results-by-standard-rules-page](images/cis-compliance-results-by-standard-rules.png " cis-compliance-results-by-standard-rules-page ")
+
+20. By clicking on **Violations**, each CIS compliance Standard Rules Violations can be seen as follows
+
+    ![cis-compliance-results-by-standard-rules1-page](images/cis-compliance-results-by-standard-rules1.png " cis-compliance-results-by-standard-rules1-page ")
+
+    Click **Close**
+    
+    Further, each violations event details, recommendations and remediation could be explored
+
+21. Go to the **Enterprise>>Compliance Standards**
+    ![cis-compliance-results-compliance-page](images/cis-compliance-results-compliance.png " cis-compliance-results-compliance-page ")
+
+22. Click on Report, Compliance Evaluation Report will be populated on a separate page that can be used for further analysis of each rule passed or failed.
+    ![evaluate-cis-dashboard-report-page](images/evaluate-cis-dashboard-report.png " evaluate-cis-dashboard-report-page ")  
+    
 
     ![cis-demo-compliance-report1-page](images/cis-demo-compliance-report1.png " cis-demo-compliance-report1-page ")
 
@@ -506,27 +534,6 @@ Click the **Cancel** button.
 
     ![cis-demo-compliance-report2-page](images/cis-demo-compliance-report2.png " cis-demo-compliance-report2-page ")
     ![cis-demo-compliance-report3-page](images/cis-demo-compliance-report3.png " cis-demo-compliance-report3-page ")
-    
-
-19. Click **X** to close Critical Violations window
-
-    ![close-evaluate-cis-critical-violations-page](images/close-evaluate-cis-critical-violations.png " close-evaluate-cis-critical-violations-page ")  
-
-20. By going back to the **Compliance Dashboard** page,  click on the standard that you created **CIS_DEMO** in the previous steps to review further evaluations of results.
-
-    ![compliance-dashboard-cis-compliance-summary-page](images/compliance-dashboard-cis-compliance-summary.png " compliance-dashboard-cis-compliance-summary-page ")
-
-    Each rule result can undergo a detailed analysis as shown on this page.
-
-    ![cis-compliance-results-by-standard-rules-page](images/cis-compliance-results-by-standard-rules.png " cis-compliance-results-by-standard-rules-page ")
-
-21. By clicking on **Violations**, each CIS compliance Standard Rules Violations can be seen as follows
-
-    ![cis-compliance-results-by-standard-rules1-page](images/cis-compliance-results-by-standard-rules1.png " cis-compliance-results-by-standard-rules1-page ")
-
-    Click **Close**
-    
-    Further, each violations event details, recommendations and remediations could be explored
 
     ![cis-compliance-results-by-standard-rules2-page](images/cis-compliance-results-by-standard-rules2.png " cis-compliance-results-by-standard-rules2-page ")
 
