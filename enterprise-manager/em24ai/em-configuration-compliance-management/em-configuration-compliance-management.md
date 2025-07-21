@@ -478,7 +478,7 @@ Click the **Cancel** button.
 
     ![cis-compliance-standard-target-success-page](images/cis-compliance-standard-target-success.png " cis-compliance-standard-target-success-page ")
 
- 16. Go to the **Enterprise>>Compliance Standards** page to check the CIS compliance posture. It takes about few minutes to show up in compliance dashboard results.
+16. Go to the **Enterprise>>Compliance Standards** page to check the CIS compliance posture. It takes about few minutes to show up in compliance dashboard results.
  
    ![compliance-standards-compliance-page](images/compliance-standards-compliance.png " compliance-standards-compliance-page ")
        
@@ -499,7 +499,6 @@ Click the **Cancel** button.
     ![cis-compliance-critical-violations-page](images/cis-compliance-critical-violations.png " cis-compliance-critical-violations-page ")
 
 18. Each rule name violated and rationale for the violation can be explored below
-
 
     ![evaluate-cis-critical-violations-page](images/evaluate-cis-critical-violations.png " evaluate-cis-critical-violations-page ")
 
@@ -533,16 +532,15 @@ Click the **Cancel** button.
     Under Result Details, clicking on the arrow mark at **emrep.us.oracle.com: CIS_DEMO** gives more information on individual rules.
 
     ![cis-demo-compliance-report2-page](images/cis-demo-compliance-report2.png " cis-demo-compliance-report2-page ")
-    ![cis-demo-compliance-report3-page](images/cis-demo-compliance-report3.png " cis-demo-compliance-report3-page ")
 
-    ![cis-compliance-results-by-standard-rules2-page](images/cis-compliance-results-by-standard-rules2.png " cis-compliance-results-by-standard-rules2-page ")
+23. On ***Standard Compliance Dashboard***
+
+    ![cis-compliance-dashboard-logout-page](images/cis-compliance-dashboard-logout.png " cis-compliance-dashboard-logout-page ")
 
     Click **Logout**
 
-    ![cis-compliance-results-logout-page](images/cis-compliance-results-logout-page.png " cis-compliance-results-logout-page ")  
+    These actions collectively bring your database target into full CIS compliance, reinforcing your organization’s security posture and operational integrity.   
 
-    <!-- All of these steps will give you a CIS Compliance security posture of database target. -->  
-    
 
 ## Task 5: Host Security Compliance
 
