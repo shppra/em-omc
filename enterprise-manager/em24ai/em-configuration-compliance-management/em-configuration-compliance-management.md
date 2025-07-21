@@ -187,7 +187,7 @@ In this step, you will compare two database targets to determine configuration d
 
 15. On the dashboard page, the donut chart for Comparison Overview gives you the summary result. Click on the **donut chart** to analyze one-time comparison result details.
 
-    ![dashboard-one-time-comparison-results-page](images/dashboard-one-time-comparison-results.PNG " dashboard-one-time-comparison-results-page ")
+    ![dashboard-one-time-comparison-results-page](images/dashboard-one-time-comparison-results.png " dashboard-one-time-comparison-results-page ")
 
     You should see the comparison definition you created on this page.
 
