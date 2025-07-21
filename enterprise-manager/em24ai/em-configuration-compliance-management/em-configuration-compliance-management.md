@@ -159,8 +159,6 @@ In this step, you will compare two database targets to determine configuration d
 
     Once the target is chosen, Click **Submit**.
 
-   
-
 12. The comparison would take a few seconds to a minute for selected targets.
 
     ![compared-add-target-submit-page](images/compared-add-target-submit.png " compared-add-target-submit-page ")
@@ -199,7 +197,7 @@ In this step, you will compare two database targets to determine configuration d
 
     ![export-one-time-comparison-result-page](images/export-one-time-comparison-result.png " export-one-time-comparison-result-page ")
 
-  After Exporting, Click **Cancel** to exit. The zip ECM002-Compare-Demo - One time Comparison_comparisonresult.zip file will be created, downloadable, and available to open in excel format on your system to do offline verification.
+    After Exporting, Click **Cancel** to exit. The zip ECM002-Compare-Demo - One time Comparison_comparisonresult.zip file will be created, downloadable, and available to open in excel format on your system to do offline verification.
 
 17. One-time Database comparison results excel file format as shown here.
 
@@ -479,12 +477,12 @@ Click the **Cancel** button.
     ![cis-compliance-standard-target-success-page](images/cis-compliance-standard-target-success.png " cis-compliance-standard-target-success-page ")
 
 16. Go to the **Enterprise>>Compliance Standards** page to check the CIS compliance posture. It takes about few minutes to show up in compliance dashboard results.
- 
-   ![compliance-standards-compliance-page](images/compliance-standards-compliance.png " compliance-standards-compliance-page ")
+
+    ![compliance-standards-compliance-page](images/compliance-standards-compliance.png " compliance-standards-compliance-page ")
        
     Under the Compliance Summary panel at the bottom below page:
 
-   ![compliance-standards-dashboard-page](images/compliance-standards-dashboard.png " compliance-standards-dashboard-page ")
+    ![compliance-standards-dashboard-page](images/compliance-standards-dashboard.png " compliance-standards-dashboard-page ")
 
      - Explore various tabs to get an understanding of Frameworks, Standards, and target-level compliance
      - For any given standard, if there are Critical, Warning, or Minor Warnings
@@ -529,18 +527,15 @@ Click the **Cancel** button.
 
     ![cis-demo-compliance-report1-page](images/cis-demo-compliance-report1.png " cis-demo-compliance-report1-page ")
 
-    Under Result Details, clicking on the arrow mark at **emrep.us.oracle.com: CIS_DEMO** gives more information on individual rules.
+    Under Result Details, clicking on the arrow mark at **hr.subnet.vcn.oraclevcn.com: CIS_DEMO** gives more information on individual like rules description, Violation messages, remediation steps.
 
     ![cis-demo-compliance-report2-page](images/cis-demo-compliance-report2.png " cis-demo-compliance-report2-page ")
 
-23. On ***Standard Compliance Dashboard***
+23. On ***Standard Compliance Dashboard***, Click **Logout**
 
     ![cis-compliance-dashboard-logout-page](images/cis-compliance-dashboard-logout.png " cis-compliance-dashboard-logout-page ")
 
-    Click **Logout**
-
     These actions collectively bring your database target into full CIS compliance, reinforcing your organization’s security posture and operational integrity.   
-
 
 ## Task 5: Host Security Compliance
 
